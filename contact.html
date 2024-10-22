@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Header with navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="signup_donor.html">S'inscrire comme donneur</a></li>
+                <li><a href="find_donor.html">Rechercher des donneurs</a></li>
+                <li><a href="contact.html" class="active">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <h1>Nous Contacter</h1>
+        <p>Vous avez des questions ? Remplissez le formulaire ci-dessous ou contactez-nous directement.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Formulaire de Contact</h2>
+            <form action="contact_form.php" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tapez votre message ici..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" name="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="contact-info-container">
+            <h3>Nos Informations de Contact</h3>
+            <p><strong>Adresse:</strong> 123 Rue Principale, Yaoundé, Cameroun</p>
+            <p><strong>Téléphone:</strong> +237 6 77 77 77 77</p>
+            <p><strong>Email:</strong> contact@banquedesang.cm</p>
+        </div>
+
+        <!-- Optional Map Placeholder -->
+        <div class="map-placeholder">
+            <h4>Localisation (Carte)</h4>
+            <p>Ici, vous pouvez ajouter une carte pour montrer la localisation de votre bureau.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Banque de Sang. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
